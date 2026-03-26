@@ -1,0 +1,15 @@
+{
+  "name": "scholarshiphub",
+  "version": "1.0.0",
+  "description": "Full Stack Scholarship Hub App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client": "npm run dev --prefix client",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
